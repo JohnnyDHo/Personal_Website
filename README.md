@@ -1,2 +1,2 @@
-# Personal_Website
-Personal website, using Bootstrap, may remake from scratch sometime soon.
+# My Personal Website @ JohnnyDHo.com
+Personal website, using Bootstrap, working on a remake from scratch. 
