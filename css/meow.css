@@ -208,6 +208,7 @@ object{
         padding-top: 1em;
     }
 
+
     /*.project-tile{
         max-height: 2000px;
     }
@@ -215,6 +216,13 @@ object{
     .project-desc{
         padding-bottom: 5em;
     }*/
+}
+@media (max-width: 1200px) {
+    .proj-skills{
+        margin-bottom: 2em;
+    }
+
+
 }
 /*
 @media (max-width: 1200px) {
