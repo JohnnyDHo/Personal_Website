@@ -19,41 +19,44 @@
     <div class="top">
         <div class="container">
             <div class="row header">
-                <h1 class="name col-sm-7 ml-md-auto">Johnny Ho</h1>
-                <div class="links col-sm-5">
-                    <a href="">Resume</a>
-                    <a href="">Projects</a>
-                    <a href="">GitHub</a>
-                    <a href="">LinkedIn</a>
-                    <a href="">Contact</a>
+                <h1 class="name col-md-5">Johnny Ho</h1>
+                <div class="links col-md-7">
+                    <a class="links-click" href="https://drive.google.com/file/d/1ZBXXWpV-3xWFZhkyz_Inhk7QSyh2EFD3/view" target="_blank"><i data-feather="file-text" id="resume"></i>Resume</a>
+                    <a class="links-click" href="#project"><i data-feather="code" id="projecti"></i>Projects</a>
+                    <a class="links-click" href="https://github.com/JohnnyDHo" target="_blank"><i data-feather="github" id="github"></i>GitHub</a>
+                    <a class="links-click" href="https://www.linkedin.com/in/johnnydho/" target="_blank"><i data-feather="linkedin" id="linkedin"></i>LinkedIn</a>
+                    <a class="links-click" href="mailto:jdh16@rice.edu" target="_blank"><i data-feather="inbox" id="contact"></i>Contact</a>
                 </div>
             </div>
             <div class="row col-sm-12">
-                <p>I’m a sophomore studying Computer Science at Rice University. I’m looking for internships starting in
-                    May 2019. See below for things I have worked on, or send an email at jdh16@rice.edu
+                <p id="me">I’m a sophomore studying Computer Science at <a href="https://www.rice.edu/" target="_blank"
+                style="text-decoration: underline;">
+                    Rice University</a>. I’m looking for internships starting in
+                    May 2019. See below for things I have worked on, or send an email at
+                    <a href="mailto:jdh16@rice.edu" target="_blank" style="text-decoration: underline;">jdh16@rice.edu</a>
                 </p>
             </div>
         </div>
     </div>
     <div class="skills">
         <div class="container">
-            <div class="row">
+            <div class="row skills-txt">
                 <h2 class="skills-text col-sm-12">Skills</h2>
             </div>
             <div class="row col-sm-12">
-                <p class="skills-named">HTML</p>
-                <p class="skills-named">CSS</p>
-                <p class="skills-named">JavaScript</p>
-                <p class="skills-named">Python</p>
-                <p class="skills-named">Java</p>
-                <p class="skills-named">R</p>
+                <p class="skills-named green">HTML</p>
+                <p class="skills-named green">CSS</p>
+                <p class="skills-named green">JavaScript</p>
+                <p class="skills-named blue">Python</p>
+                <p class="skills-named blue">Java</p>
+                <p class="skills-named blue">R</p>
             </div>
         </div>
     </div>
-    <div class="projects">
+    <div class="projects" id="project">
         <div class="container">
             <div class="row col-sm-12">
-                <h2>Projects</h2>
+                <h2 id="projects-title">Projects</h2>
             </div>
         </div>
         <div class="container project-tile">
@@ -62,14 +65,25 @@
                     <object type="image/svg+xml" data="svgs/car.svg" class="car project-image">
                         Person sitting next to their car <!-- fallback image in CSS-->
                     </object>
+                    <object type="image/svg+xml" data="svgs/map.svg" class="map">
+                        Image of a map <!-- fallback image in CSS-->
+                    </object>
                 </div>
                 <div class="col-lg-4 col-md-12 order-md-first">
                     <div class="project-name">Road Trip Web App
                     </div>
-                    <p>Work in progress web app using a maps API and weather APIs to improve the experience of
+                    <div class="row">
+                        <p class="skills-named green  proj-skills">HTML</p>
+                        <p class="skills-named green  proj-skills">CSS</p>
+                        <p class="skills-named green  proj-skills">JavaScript</p>
+                    </div>
+                    <p class="project-desc">Work in progress web app using a maps API and weather APIs to improve the experience of
                         planning trips with features such as making distance/time based stops before starting the trip.
                         Mobile app coming once this is finished.
                     </p>
+                    <div class="project-explore"><a href="https://github.com/JohnnyDHo/Road-Trip-Mapbox" style="color:
+                    #F6F9FC !important;" target="_blank">Explore<i data-feather="github" class="explore-icon"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
