@@ -198,6 +198,31 @@ object{
     left: 57px;
 }
 
+.skills-named:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 7px 14px rgba(50,50,93,.3), 0 0px 6px rgba(0,0,0,.2);
+}
+
+.skills-text:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 7px 14px rgba(50,50,93,.2), 0 0px 6px rgba(0,0,0,.1);
+}
+
+#projects-title:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 7px 14px rgba(50,50,93,.3), 0 0px 6px rgba(0,0,0,.2);
+}
+
+
+.project-explore:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 7px 20px rgba(64, 138, 248, 0.5), 0 0px 30px rgba(64,138,248,.2);
+}
+
+a:hover{
+    transform: translateY(-1px);
+}
+
 @media (max-width: 767px) {
     #me{
         padding-top: 1em;
