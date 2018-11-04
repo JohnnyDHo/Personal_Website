@@ -59,6 +59,25 @@ a{
     margin-bottom: .8em;
 }
 
+.other-skills-txt{
+    width: 365px;
+    height: 70px;
+}
+
+.other-skills-text{
+    color: #6B7C93;
+    border: 2px solid #3ECF8C ;
+    border-collapse: separate;
+    perspective: 1px;
+    -moz-border-image: -moz-linear-gradient(top, #3ECF8C 0%, #408AF8 100%);
+    -webkit-border-image: -webkit-linear-gradient(top, #3ECF8C 0%, #408AF8 100%);
+    border-image: linear-gradient(to right, #3ECF8C 0%, #408AF8 100%);
+    border-image-slice: 1;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-left: .5em;
+    margin-bottom: .8em;
+}
+
 .skills-named{
     border: 2px solid black;
     box-sizing: border-box;
@@ -103,7 +122,7 @@ object{
     margin-left: 2.4em;
     margin-right: -1em;
     margin-top: -1em;
-    margin-bottom: -.2em;
+    margin-bottom: 1.9em;
 }
 
 .project-explore{
@@ -167,6 +186,7 @@ object{
 .project-desc{
     padding: 1em;
     font-size: 1.5em;
+    margin-top: -1.5em;
 }
 #resume{
     position: relative;
