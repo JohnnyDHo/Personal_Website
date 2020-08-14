@@ -27,8 +27,8 @@
                 <div class="hero-inner">
                     <div class="hero-copy">
                         <h1 class="hero-title mt-0">Hi, I'm Johnny Ho!</h1>
-                        <p class="hero-paragraph">I'm a Junior studying Computer Science at Rice University. Scroll down to read more about me.</p>
-                        <div class="hero-cta"><a class="button button-primary" href="https://drive.google.com/file/d/1-rxpNPdxFtDYuX12-qWLULZ2rrzmxYoi/view?usp=sharing" target="_blank" rel="noopener"><i data-feather="file-text" class="feat"></i>Resume</a><a class="button" href="https://www.linkedin.com/in/johnnydho/" target="_blank" rel="noopener"><i data-feather="linkedin" class="feat"></i>LinkedIn</a></div>
+                        <p class="hero-paragraph">I'm a Senior studying Computer Science at Rice University (Graduating May 2021). Scroll down to read more about me.</p>
+                        <div class="hero-cta"><a class="button button-primary" href="https://drive.google.com/file/d/1ayXeilVbAcn9tvZiUK3_BDi6aLwNmmEy/view?usp=sharing" target="_blank" rel="noopener"><i data-feather="file-text" class="feat"></i>Resume</a><a class="button" href="https://www.linkedin.com/in/johnnydho/" target="_blank" rel="noopener"><i data-feather="linkedin" class="feat"></i>LinkedIn</a></div>
                         <div class="hero-cta"><a class="button button-primary" href="https://github.com/JohnnyDHo" target="_blank" rel="noopener"><i data-feather="github" class="feat"></i>GitHub</a><a class="button" href="mailto:jdh16@rice.edu" target="_blank" rel="noopener"><i data-feather="inbox" class="feat"></i>Contact</a></div>
                     </div>
                     <div class="hero-figure anime-element">
@@ -57,15 +57,52 @@
                         <h2 class="section-title mt-0">About Me</h2>
                         <p class="section-paragraph">In addition to an interest in Computer Science, I am also
                         really interested in cars, and am also a top 100 player in a video game series called "Forza",
-                        which millions of people play. I also enjoy drawing and making unique "skins" for my laptop
-                        and other electronics. </p>
+                        which millions of people play. I also enjoy drawing and recently started getting into photography. </p>
                         <p class="section-paragraph">Since coming to Rice, I've participated in a few Hackathons,
                         as well as trading competitions. I have been involved in many clubs, like the Rice Vietnamese
                         Student Association, working to help high school students better understand the college
                         admission process, and more coding related clubs like the Rice Computer Science Club
                         and the Rice Computational Finance Club.</p>
-                        <p class="section-paragraph">This past summer, I worked as a Software Engineer Intern at
-                        eBay, in San Jose, CA. I am looking for internships for Summer 2020.</p>
+                        <p class="section-paragraph">This past summer, I worked as a Software Development Engineer Intern at
+                        Amazon, in Seattle, WA (Virtually). I am looking for full-time positions as I am graduating in May 2021.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pricing section">
+            <div class="container-sm">
+                <div class="pricing-inner section-inner">
+                    <div class="pricing-header text-center">
+                        <h2 class="section-title mt-0">My Experience at Amazon</h2>
+                        <p class="section-paragraph">I worked with the Kindle Rewards team within Amazon. This team handles
+                        various offers and promotions that show up when you are looking at Kindle books or through emails, for example,
+                        you might get targeted an offer for "Spend $20, Get $5" for eBooks. </p>
+                        <p class="section-paragraph">The main project I worked on was making an internal website that will
+                        serve as a foundation for multiple functions, but for the scope of my internship it was to verify that
+                            users had access to view/create (separate permissions) entries on the table, and if they did have
+                            permission, then they could view it on this page rather than having to enter the AWS Console and go
+                            to the DynamoDB page there. I completed this, the website was created in React with Typescript and
+                            for the back-end I used an AWS Lambda as well as some internal Amazon tools to create a CloudFormation
+                            template that when deployed would update the Lambda as well as various APIs and roles that the front-end
+                            page needed to interact with the Lambda, which in turn interacted with the DynamoDB table. When users tried to
+                            create an entry, there would be client side validation (making sure the form wasn't empty and other basic checks)
+                            as well as server-side validation (checking values matched our Enums and other formatting). When viewing
+                            the list of entries from the table, I paginated the results and made API calls when users looked at
+                            a different page in the table of results on the website, to reduce loading times from getting a large
+                            number of entries at once.
+                            I was able to deploy this project into production, but I also did some other things in my time there.
+
+                            </p>
+                        <p>I created a library package so that my team would have a standardized and validated way to interact with
+                            this DynamoDB table, as there was a Data Access Object class that would verify all incoming and
+                            outgoing entries from the table. Since I was using AWS Lambdas, I also ran into issues when first
+                            opening the page, as the Lambda needed to start up, which would take around 10 seconds. I researched
+                            this and was able to reduce it down to around 2 seconds, a 5x improvement, without increasing costs by
+                            a noticeable amount (For reference the "official" solution by AWS called "Provisioned Concurrency" only
+                            reduced latency down to 5 seconds and cost around 50 times more than my solution). I documented my
+                            findings and my whole development process on the Amazon internal wiki. If you want to know more about
+                            anything I did here, I'd be happy to explain in more detail!
+                         </p>
                     </div>
                 </div>
             </div>
